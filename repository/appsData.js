@@ -102,6 +102,7 @@ export class AppsData {
       }
     } catch (e) {
       console.warn(e);
+      throw new Error(e);
     }
   }
 }

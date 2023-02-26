@@ -5,12 +5,17 @@
   "main": "main.js",
   "scripts": {
     "start": "live-server",
+    "test": "jest",
     "sass-dev": "sass --watch --update --style=expanded styles.scss:styles.css",
     "sass-prod": "sass --no-source-map --style=compressed styles.scss:styles.css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.4.3",
+    "jest": "^29.4.3",
     "live-server": "^1.2.2",
     "sass": "^1.58.3"
   }
