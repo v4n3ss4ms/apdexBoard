@@ -48,10 +48,10 @@ export class AppsData {
     const isAppNameValid =
       typeof newApp.name === 'string' && newApp.name.length > 0;
     const isHostValid =
-      typeof newApp.host === 'array' && newApp.host.length > 0;
+      typeof newApp.host === 'object' && newApp.host.length > 0;
     const isApdexValid = typeof newApp.apdex === 'number';
     const isContributorsValid =
-      typeof newApp.contributors === 'array' && newApp.contributors.length > 0;
+      typeof newApp.contributors === 'object' && newApp.contributors.length > 0;
     const isVersionValid = typeof newApp.version === 'number';
 
     return (
@@ -84,9 +84,7 @@ export class AppsData {
       this.byHost[hostName].splice(index, 1);
       this._updateByApdex();
     } catch (e) {
-      const msg = `Host name ${hostName} doesn't exist`;
-      console.warn(msg);
-      throw new Error(msg);
+      throw new Error(`Host name ${hostName} doesn't exist`);
     }
   }
 
@@ -101,7 +99,6 @@ export class AppsData {
         throw new Error('new app data is not valid');
       }
     } catch (e) {
-      console.warn(e);
       throw new Error(e);
     }
   }

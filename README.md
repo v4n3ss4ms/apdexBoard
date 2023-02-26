@@ -13,7 +13,7 @@ Apdex Board
 * `npm start` (It runs a live server on port :8080)
 
 ## Tests
-[TBD]
+* `npm run test`
 
 ## Decisions
 ### view.js
@@ -21,5 +21,5 @@ Apdex Board
 * Release number is shown through a window.alert() instead of a popup following the indications: "When clicking over an app, an alert dialog including the release number has to be shown."
 
 ## Nice to have
-[TBD]
+* Cypress could be added in order to test end to end functionalies
 
