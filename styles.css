@@ -1,0 +1,160 @@
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  max-width: 840px;
+}
+
+/*@media (max-width:768px) {
+}*/
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+.content--list {
+  flex-direction: column;
+}
+.content--list .results {
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  margin: 0 30px;
+}
+.header__item {
+  white-space: nowrap;
+  flex-basis: 0;
+}
+.header__title {
+  font-weight: 700;
+  color: #000000;
+  font-size: 35px;
+  line-height: 43px;
+}
+.header__email {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex-basis: auto;
+  flex-grow: 2;
+}
+
+.results {
+  max-width: 375px;
+  flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  color: #4a4a4a;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.results-table caption {
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 23px;
+  text-align: left;
+}
+.results-table tr {
+  text-align: left;
+}
+.results-table td {
+  vertical-align: top;
+  padding: 0px 15px 15px 0;
+}
+.results-table__score {
+  font-size: 13px;
+  opacity: 62%;
+}
+
+/*# sourceMappingURL=styles.css.map */

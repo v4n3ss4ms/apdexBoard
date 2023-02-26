@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: $s-m;
+  margin: 0 $s-m;
+  &__item {
+    white-space: nowrap;
+    flex-basis: 0;
+  }
+  &__title {
+    @include main-title;
+    font-size: $fs-xl;
+    line-height: $lh-xl;
+  }
+  &__email {
+    font-weight: $w-normal;
+    font-size: $fs-l;
+    line-height: $lh-l;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-basis: auto;
+    flex-grow: 2;
+  }
+}

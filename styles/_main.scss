@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: $s-m;
+
+  &--list {
+    flex-direction: column;
+
+    .results {
+      max-width: 100%;
+    }
+  }
+} 

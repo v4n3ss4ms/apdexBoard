@@ -1,0 +1,17 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "NR code challenge - vanilla JS",
+  "main": "main.js",
+  "scripts": {
+    "start": "live-server",
+    "sass-dev": "sass --watch --update --style=expanded styles.scss:styles.css",
+    "sass-prod": "sass --no-source-map --style=compressed styles.scss:styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.58.3"
+  }
+}

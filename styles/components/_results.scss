@@ -1,0 +1,33 @@
+.results {
+  max-width: $bs-l;
+  flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+  padding: $s-m;
+  margin-bottom: $s-m;
+  background-color: $c-white;
+  color: $c-secondary;
+  font-size: $fs-m;
+  line-height: $lh-m;
+}
+
+.results-table {
+  caption {
+    @include main-title;
+    padding-bottom: $s-s;
+    text-align: left;
+  }
+  tr {
+    text-align: left;
+  }
+
+  td {
+    vertical-align: top;
+    padding: 0px 15px 15px 0;
+  }
+
+  &__score {
+    font-size: $fs-s;
+    opacity: 62%;
+  }
+}
